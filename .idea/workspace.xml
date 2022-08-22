@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a303899-c6a6-4aed-b4b5-e9ab116833a0" name="Changes" comment="RSA 4096 asymmetric encryption">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/hash/HashUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/hash/HashUtilsTest.java" afterDir="false" />
+    <list default="true" id="3a303899-c6a6-4aed-b4b5-e9ab116833a0" name="Changes" comment="hashing passwords with: Bcrypt, PBKDF2 and Scrypt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tamiroud/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tamiroud/com/tamiroud/crypto/asymmetric/AsymmetricEncryptionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/asymmetric/AsymmetricEncryptionUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tamiroud/com/tamiroud/crypto/symmetric/SymmetricEncryptionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/symmetric/SymmetricEncryptionUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tamiroud/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tamiroud/com/tamiroud/crypto/asymmetric/AsymmetricEncryptionUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/asymmetric/AsymmetricEncryptionUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tamiroud/com/tamiroud/crypto/symmetric/SymmetricEncryptionUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/symmetric/SymmetricEncryptionUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/hash/HashUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/hash/HashUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/hash/HashUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/hash/HashUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,22 +65,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.HashUtilsTest">
-    <configuration name="AsymmetricEncryptionUtilsTest.testRSACryptRoutine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cryptography-with-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tamiroud.com.tamiroud.crypto.asymmetric.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tamiroud.com.tamiroud.crypto.asymmetric" />
-      <option name="MAIN_CLASS_NAME" value="com.tamiroud.com.tamiroud.crypto.asymmetric.AsymmetricEncryptionUtilsTest" />
-      <option name="METHOD_NAME" value="testRSACryptRoutine" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HashUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cryptography-with-java" />
       <extension name="coverage">
@@ -117,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashUtilsTest.generateRandomSalt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashUtilsTest.testBcryptRoutine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cryptography-with-java" />
       <extension name="coverage">
         <pattern>
@@ -127,22 +106,40 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tamiroud.crypto.hash" />
       <option name="MAIN_CLASS_NAME" value="com.tamiroud.crypto.hash.HashUtilsTest" />
-      <option name="METHOD_NAME" value="generateRandomSalt" />
+      <option name="METHOD_NAME" value="testBcryptRoutine" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.tamiroud in cryptography-with-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashUtilsTest.testPBKDF2Routine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cryptography-with-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tamiroud.crypto.*" />
+          <option name="PATTERN" value="com.tamiroud.crypto.hash.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tamiroud" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.tamiroud.crypto.hash" />
+      <option name="MAIN_CLASS_NAME" value="com.tamiroud.crypto.hash.HashUtilsTest" />
+      <option name="METHOD_NAME" value="testPBKDF2Routine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashUtilsTest.testScryptRoutine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cryptography-with-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tamiroud.crypto.hash.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tamiroud.crypto.hash" />
+      <option name="MAIN_CLASS_NAME" value="com.tamiroud.crypto.hash.HashUtilsTest" />
+      <option name="METHOD_NAME" value="testScryptRoutine" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,10 +147,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.HashUtilsTest" />
+        <item itemvalue="JUnit.HashUtilsTest.testScryptRoutine" />
+        <item itemvalue="JUnit.HashUtilsTest.testPBKDF2Routine" />
+        <item itemvalue="JUnit.HashUtilsTest.testBcryptRoutine" />
         <item itemvalue="JUnit.HashUtilsTest.createSHA2Hash" />
-        <item itemvalue="JUnit.HashUtilsTest.generateRandomSalt" />
-        <item itemvalue="JUnit.com.tamiroud in cryptography-with-java" />
-        <item itemvalue="JUnit.AsymmetricEncryptionUtilsTest.testRSACryptRoutine" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661114260154</updated>
       <workItem from="1661114261594" duration="515000" />
-      <workItem from="1661115033820" duration="12812000" />
+      <workItem from="1661115033820" duration="18318000" />
     </task>
     <task id="LOCAL-00001" summary="initialized maven project">
       <created>1661115249715</created>
@@ -189,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661143575308</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SHA-256 hash">
+      <created>1661148432857</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661148432857</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +214,9 @@
     <MESSAGE value="initialized maven project" />
     <MESSAGE value="AES 256 symetric encryption" />
     <MESSAGE value="RSA 4096 asymmetric encryption" />
-    <option name="LAST_COMMIT_MESSAGE" value="RSA 4096 asymmetric encryption" />
+    <MESSAGE value="SHA-256 hash" />
+    <MESSAGE value="hashing passwords with: Bcrypt, PBKDF2 and Scrypt" />
+    <option name="LAST_COMMIT_MESSAGE" value="hashing passwords with: Bcrypt, PBKDF2 and Scrypt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -219,6 +225,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/symmetric/SymmetricEncryptionUtils.java</url>
           <line>22</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/hash/HashUtils.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
