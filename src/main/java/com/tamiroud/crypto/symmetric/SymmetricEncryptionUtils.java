@@ -1,4 +1,4 @@
-package com.tamiroud.com.tamiroud.crypto.symmetric;
+package com.tamiroud.crypto.symmetric;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;

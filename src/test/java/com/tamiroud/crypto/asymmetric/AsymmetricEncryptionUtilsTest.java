@@ -1,4 +1,4 @@
-package com.tamiroud.com.tamiroud.crypto.asymmetric;
+package com.tamiroud.crypto.asymmetric;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 

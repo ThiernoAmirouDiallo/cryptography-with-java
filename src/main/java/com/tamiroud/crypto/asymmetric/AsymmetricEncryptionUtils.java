@@ -1,4 +1,4 @@
-package com.tamiroud.com.tamiroud.crypto.asymmetric;
+package com.tamiroud.crypto.asymmetric;
 
 import java.security.InvalidKeyException;
 import java.security.Key;

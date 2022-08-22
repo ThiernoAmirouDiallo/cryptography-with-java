@@ -1,4 +1,4 @@
-package com.tamiroud;
+package com.tamiroud.crypto;
 
 public class Main {
 
