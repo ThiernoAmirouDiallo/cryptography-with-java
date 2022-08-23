@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a303899-c6a6-4aed-b4b5-e9ab116833a0" name="Changes" comment="hashing passwords with: Bcrypt, PBKDF2 and Scrypt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/digitalsignature/DigitalSignatureUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/digitalsignature/DigitalSignatureUtilsTest.java" afterDir="false" />
+    <list default="true" id="3a303899-c6a6-4aed-b4b5-e9ab116833a0" name="Changes" comment="digital signature">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tamiroud/crypto/keystore/KeyStoreUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tamiroud/crypto/keystore/KeyStoreUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,14 +57,14 @@
       <recent name="com.tamiroud.crypto.symmetric" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tamiroud.crypto.keystore" />
       <recent name="com.tamiroud.crypto.digitalsignature" />
       <recent name="com.tamiroud.crypto.hash" />
       <recent name="com.tamiroud.com.tamiroud.crypto.asymmetric" />
       <recent name="com.tamiroud.com.tamiroud.crypto.symmetric" />
-      <recent name="com.tamiroud" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DigitalSignatureUtilsTest">
+  <component name="RunManager" selected="JUnit.KeyStoreUtilsTest.createPrivateJaveKeyStore">
     <configuration name="DigitalSignatureUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cryptography-with-java" />
       <extension name="coverage">
@@ -91,22 +91,6 @@
       <option name="PACKAGE_NAME" value="com.tamiroud.crypto.hash" />
       <option name="MAIN_CLASS_NAME" value="com.tamiroud.crypto.hash.HashUtilsTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HashUtilsTest.testBcryptRoutine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cryptography-with-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tamiroud.crypto.hash.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tamiroud.crypto.hash" />
-      <option name="MAIN_CLASS_NAME" value="com.tamiroud.crypto.hash.HashUtilsTest" />
-      <option name="METHOD_NAME" value="testBcryptRoutine" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,13 +127,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KeyStoreUtilsTest.createPrivateJaveKeyStore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cryptography-with-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tamiroud.crypto.keystore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tamiroud.crypto.keystore" />
+      <option name="MAIN_CLASS_NAME" value="com.tamiroud.crypto.keystore.KeyStoreUtilsTest" />
+      <option name="METHOD_NAME" value="createPrivateJaveKeyStore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KeyStoreUtilsTest.createPrivateJaveKeyStore" />
         <item itemvalue="JUnit.DigitalSignatureUtilsTest" />
         <item itemvalue="JUnit.HashUtilsTest" />
         <item itemvalue="JUnit.HashUtilsTest.testScryptRoutine" />
         <item itemvalue="JUnit.HashUtilsTest.testPBKDF2Routine" />
-        <item itemvalue="JUnit.HashUtilsTest.testBcryptRoutine" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661114260154</updated>
       <workItem from="1661114261594" duration="515000" />
-      <workItem from="1661115033820" duration="20338000" />
+      <workItem from="1661115033820" duration="22507000" />
     </task>
     <task id="LOCAL-00001" summary="initialized maven project">
       <created>1661115249715</created>
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661154556245</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="digital signature">
+      <created>1661239042917</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661239042917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +229,8 @@
     <MESSAGE value="RSA 4096 asymmetric encryption" />
     <MESSAGE value="SHA-256 hash" />
     <MESSAGE value="hashing passwords with: Bcrypt, PBKDF2 and Scrypt" />
-    <option name="LAST_COMMIT_MESSAGE" value="hashing passwords with: Bcrypt, PBKDF2 and Scrypt" />
+    <MESSAGE value="digital signature" />
+    <option name="LAST_COMMIT_MESSAGE" value="digital signature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
